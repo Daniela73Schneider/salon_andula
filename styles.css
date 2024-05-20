@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/*body main stránky */
+
+.servis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+/*zaobalení servis div do Flexboxu*/
+
+.servis .mokraPedi,
+.luxus,
+.gellak,
+.hloubkovaMasaz,
+.parafin,
+.diabetik,
+.Dojezd {
+  flex: 0 1 calc(30% - 20px);
+  padding: 10px;
+}
+
+/*zarovnání sloupců  */
