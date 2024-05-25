@@ -2,12 +2,86 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+nav.mainMenu {
+  width: 100%;
+  /* Ujistíme se, že navigace je přes celou šířku */
+  background-color: #563d2f;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.mainMenu a {
+  color: #fff;
+  /* Barva textu v navigaci */
+  font-size: 1.5em;
+  /* Použití em jednotky pro flexibilní velikost fontu */
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+  /* Přidání efektu při najetí myší */
+}
+
+nav.mainMenu a:hover {
+  color: #f0a500;
+  /* Změna barvy při najetí myší */
+}
+
+.imgMain {
+  display: block;
+  float: right;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+  /* Změna opacity na procenta */
+  transition: opacity 0.3s ease;
+  /* Přidání efektu při najetí myší */
+}
+
+.imgMain:hover {
+  opacity: 1;
+  /* Plná opacity při najetí myší */
+}
+
+/* Stylování pro větší obrazovky */
+@media (min-width: 768px) {
+  .imgMain {
+    width: 50vw;
+    margin-left: 50%;
+  }
+
+  nav.mainMenu {
+    justify-content: flex-start;
+    /* Zarovnání navigace vlevo */
+    padding: 0 20px;
+    /* Přidání odsazení pro lepší vzhled */
+  }
 }
 
 /*body main stránky */
+.nameMain {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+  height: 50vh;
+  margin-right: 50%;
+  margin-top: 20%;
+  color: #828282;
+}
 
-.servis {
+/*název salonu a popis*/
+
+div.servis {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -15,7 +89,6 @@ body {
 }
 
 /*zaobalení servis div do Flexboxu*/
-
 .servis .mokraPedi,
 .luxus,
 .gellak,
@@ -28,6 +101,9 @@ body {
 }
 
 /*zarovnání sloupců  */
+
+
+
 
 /*page Gallery*/
 body.prace {
@@ -45,6 +121,7 @@ body.prace {
   margin: 20px;
 }
 
+/*styled container of gallery*/
 .prace {
   display: flex;
   flex-wrap: wrap;
