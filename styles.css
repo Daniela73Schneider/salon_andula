@@ -1,23 +1,28 @@
+header {
+  margin-bottom: 5%;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
-  background-color: #ffffff;
+  background-color: #fffaf7;
+  width: 100dvw;
+  color: #1d1610;
 }
 
 nav.mainMenu {
-  width: 100%;
-  /* Ujistíme se, že navigace je přes celou šířku */
-  background-color: #563d2f;
-  height: 10vh;
+  width: 100dvw;
+  background-color: #d4b692;
+  height: 10dvh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 nav.mainMenu a {
-  color: #fff;
+  color: #1d1610;
   /* Barva textu v navigaci */
   font-size: 1.5em;
   /* Použití em jednotky pro flexibilní velikost fontu */
@@ -28,7 +33,7 @@ nav.mainMenu a {
 }
 
 nav.mainMenu a:hover {
-  color: #f0a500;
+  color: #12100b;
   /* Změna barvy při najetí myší */
 }
 
@@ -36,7 +41,7 @@ nav.mainMenu a:hover {
   display: block;
   float: right;
   margin: 20px auto;
-  max-width: 100%;
+  max-width: 100dvw;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -54,17 +59,11 @@ nav.mainMenu a:hover {
 /* Stylování pro větší obrazovky */
 @media (min-width: 768px) {
   .imgMain {
-    width: 50vw;
+    width: 50dvw;
     margin-left: 50%;
   }
-
-  nav.mainMenu {
-    justify-content: flex-start;
-    /* Zarovnání navigace vlevo */
-    padding: 0 20px;
-    /* Přidání odsazení pro lepší vzhled */
-  }
 }
+
 
 /*body main stránky */
 .nameMain {
@@ -72,8 +71,8 @@ nav.mainMenu a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40vw;
-  height: 50vh;
+  width: 40dvw;
+  height: 50dvh;
   margin-right: 50%;
   margin-top: 20%;
   color: #828282;
@@ -103,9 +102,32 @@ div.servis {
 /*zarovnání sloupců  */
 
 
+/*CENÍK*/
+.price {
+  width: 80%;
+}
+
+.price p {
+  display: flex;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e9cba7;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #0000001a;
+  font-size: 1.1em;
+  line-height: 1.4;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price p.priceDate {
+  display: flex;
+  justify-content: center;
+}
 
 
-/*page Gallery*/
+
+/*PAGE GALLERY*/
 body.prace {
   display: flex;
   flex-wrap: wrap;
@@ -129,4 +151,39 @@ body.prace {
   align-content: space-around;
   align-items: center;
   flex-direction: row;
+}
+
+/*PAGE GIFT CARD*/
+.giftCard {
+  margin: 15dvh 10dvw;
+  padding-left: 50%;
+  position: absolute;
+}
+
+.imgGift {
+  max-width: 50dvw;
+  margin-right: 50%;
+  margin-left: 10%;
+}
+
+/*PAGE ABOUT US*/
+.aboutImg {
+  max-width: 50dvw;
+  margin-right: 55%;
+  margin-left: 20%;
+}
+
+.aboutContent {
+  margin: 15dvh 10dvw;
+  padding-left: 50%;
+  position: absolute;
+}
+
+/*PAGE CONTACT*/
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10% 20% 10% 80%;
 }
