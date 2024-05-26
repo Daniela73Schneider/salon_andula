@@ -187,3 +187,10 @@ body.prace {
   flex-wrap: wrap;
   margin: 10% 20% 10% 80%;
 }
+
+#map {
+  height: 400px;
+  /* Nastavte výšku mapy */
+  width: 40%;
+  /* Nastavte šířku mapy */
+}
